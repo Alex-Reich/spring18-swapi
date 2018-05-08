@@ -1,4 +1,3 @@
-console.log(5);
 var app = {
   controllers: {
     swapiController: new SwapiController(),
@@ -7,4 +6,3 @@ var app = {
     pokemonController: new PokemonController(),    
   }
 };
-console.log("end");

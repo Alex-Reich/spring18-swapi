@@ -13,9 +13,27 @@ function PokemonController() {
         template += `</ul>`
         document.getElementById("pokeList").innerHTML = template
     };
+    
+// Trying to add next/previous buttons to move through all the pokemon
+    // function drawPokeButtons(res) {
+    //     var template = ''
+    //     if(res.previous){
+    //       template += `<button onclick="app.controllers.pokemonController.getPokeList('${res.previous}')">Previous</button>`
+    //     }
+    //     if(res.next){
+    //       template += `<button onclick="app.controllers.pokemonController.getPokeList('${res.next}')">Next</button>`
+    //     }
+    //     document.getElementById('pokeButtons').innerHTML = template
+    //   }
+    
+    //   function handlePeopleResponse(res) {
+    //     drawPokeButtons(res);
+    //     drawPokeList(res.results);
+    //   }
 
     function drawPokeInfo(info) {
         var template = `
+        <img src="${info.sprites.front_default}">
         <h1>${info.name}</h1>
         <h3>Weight: ${info.weight}</h3>
         <h3>Height: ${info.height}</h3>
