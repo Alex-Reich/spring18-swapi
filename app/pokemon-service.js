@@ -1,8 +1,5 @@
 function PokemonService() {
-var baseUrl = "https://pokeapi.co/"
-
-
-
+var baseUrl = "https://pokeapi.co/api/v2/"
 
 
 
