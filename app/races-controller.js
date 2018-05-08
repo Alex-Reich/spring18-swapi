@@ -24,7 +24,6 @@ function RacesController(){
   }
 
   this.getDetails = function getDetails(url){
-    debugger
     dndService.getDetails(url, drawDetails)
   }
 
